@@ -7,12 +7,51 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="reg">
-        <div class="reg__text"></div>
+    <div id="reg">
+        <div class="reg__text">РЕГИСТРАЦИЯ</div>
         <form id="form" action="" method="get">
-            <label for="name"></label>
-            <input name="name" id="name" type="text">
+            <div class="form">
+                <label for="name"></label>
+                <input name="name" id="name" type="text" placeholder="Имя:">
+            </div>
 
+            <div class="form">
+                <label for="surname"></label>
+                <input name="surname" id="surname" type="text" placeholder="Фамилия:">
+            </div>
+
+            <div class="form">
+                <label for="email"></label>
+                <input name="email" id="email" type="email" placeholder="Почта:">
+            </div>
+
+            <div class="form">
+                <label for="tel"></label>
+                <input name="tel" id="tel" type="tel" placeholder="Телефон:">
+            </div>
+
+            <div class="form">
+                <label for="address"></label>
+                <input name="address" id="address" type="text" placeholder="Адрес:">
+            </div>
+
+            <div class="form">
+                <label for="password"></label>
+                <input name="password" id="password" type="password" placeholder="Пароль:">
+            </div>
+
+            <div class="buttons">
+                <div class="button">
+                    <label for="back"></label>
+                    <input name="back" id="back" type="submit" value="Назад">
+                </div>
+                <div class="button">
+                    <label for="registr"></label>
+                    <input name="registr" id="registr" type="submit" value="Регистрация">
+                </div>
+            </div>
+            <div class="text">Уже есть аккаунт?</div>
+            <a id="link" href="#">Войти</a>
         </form>
     </div>
 </body>
