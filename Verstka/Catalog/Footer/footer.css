@@ -1,0 +1,31 @@
+*, 
+*:after, 
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.footer {
+    margin-top: 150px;
+    background-color: #FF8C00;
+    box-shadow: 0px -4px 25px 1px rgba(0, 0, 0, 0.54);
+}
+
+.footer__items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+}
+
+.footer__items div a {
+    color: #FFF;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration: none; 
+}
