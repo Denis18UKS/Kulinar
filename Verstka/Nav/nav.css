@@ -83,7 +83,7 @@
     cursor: pointer;
 }
 
-.reg {
+#reg__button {
     width: 200px;
     height: 65px;
     border: 0;
@@ -107,12 +107,12 @@
 
 }
 
-.reg:active {
+#reg__button:active {
     box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.89) inset;
     color: rgba(255, 255, 255, 0.79);
 }
 
-.reg:hover{
+#reg__button:hover{
     background-color: #FF8C00;
     transition: all 0.6s ease-in-out;
 }
