@@ -105,3 +105,35 @@ body {
     width: 4px;
     height: 24px;
 }
+
+.sum {
+    color: #000;
+    font-family: 'Inter', sans-serif;
+    font-size: 96px;
+    font-weight: 700;
+    margin: 50px 0;
+    text-align: center;
+}
+
+.cart-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+#clear {
+    margin-right: 70px;
+} 
+
+.cart-buttons button {
+    width: 561px;
+    height: 124px;
+    font-family: 'Inter', sans-serif;
+    color: #000;
+    font-size: 50px;
+    font-weight: 700;
+    background-color: #FFEFC5;
+    border: 0;
+    border-radius: 45px;
+    box-shadow: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    cursor: pointer;
+}
