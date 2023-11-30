@@ -28,7 +28,6 @@ body {
 
 /* Header */
 .header {
-    background: url(Images/Header/HeaderBG.jpg ) center no-repeat;
     background-attachment: fixed;
     background-size: cover;
     width: 100%;
