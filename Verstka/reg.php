@@ -4,7 +4,7 @@
     // Установите значения для переменных подключения к базе данных
     $servername = "localhost";
     $username = "root";
-    $password = null;
+    $password = "root";
     $dbname = "MDK_GP";
 
     $conn = new mysqli($servername, $username, $password, $dbname);

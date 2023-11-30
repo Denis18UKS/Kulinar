@@ -1,30 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <link rel="stylesheet" href="../Footer/footer.css">
-    <link rel="stylesheet" href="../Nav/nav.css">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="../Reg/reg.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../Main (SignUser)/style.css">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CookingHome</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Kavoon&family=Tillana:wght@400;700&display=swap"
-        rel="stylesheet">
-    <script src="../Reg/reg.js" defer></script>
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Shop-cart</title>
 </head>
-
 <body>
-
+    
     <header class="header">
         <div class="nav">
-            <div class="container">
-                <nav class="nav__items">
+            <div class="container">     
+                <nav class="nav__items"> 
                     <div class="logo">
                         <div class="logo__icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="78" height="70" viewBox="0 0 78 70" fill="none">
@@ -60,11 +48,14 @@
                         <div class="logo__text">CookingHome</div>
                     </div>
                     <div class="nav__links">
-                        <div class="nav__link"><a href="../Main/index.html">Главная</a></div>
+                        <div class="nav__link active"><a href="../Main/index.html">Главная</a></div>
                         <div class="nav__link"><a href="../Reviews/index.html">Отзывы</a></div>
-                        <div class="nav__link active"><a href="../Info/index.html">Информация</a></div>
+                        <div class="nav__link"><a href="../Info/index.html">Информация</a></div>
+                        <div class="nav__link"><a href="../Info/index.html">Заказы</a></div>
+                        <div class="nav__link"><a href="../Info/index.html">Статус</a></div>
                     </div>
                     <div class="nav__btns">
+                        <img src="icons/Group 106.png" alt="">
                         <div class="cart">
                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44" height="45" viewBox="0 0 44 45" fill="none">
                                 <rect width="43.4517" height="45" fill="url(#pattern0)"/>
@@ -76,150 +67,26 @@
                                 </defs>
                                 </svg>
                         </div>
-                        <button id="reg__button">Регистрация</button>
+                        <button id="reg__button" onclick="window.location.href='../Main/index.html'">Выйти</button>
                     </div>
                 </nav>
             </div>
         </div>
-    </header>
-
-
-
-    <!-- Reg -->
-
-<div class="reg">
-    <div class="reg__text">РЕГИСТРАЦИЯ</div>
-    <form id="form" action="http://kulinar/reg.php" method="post">
-        <div class="form">
-            <label for="name"></label>
-            <input name="name" id="name" type="text" placeholder="Имя:" required>
-        </div>
-
-        <div class="form">
-            <label for="surname"></label>
-            <input name="surname" id="surname" type="text" placeholder="Фамилия:" required>
-        </div>
-
-        <div class="form">
-            <label for="email"></label>
-            <input name="email" id="email" type="email" placeholder="Почта:" required>
-        </div>
-
-        <div class="form">
-            <label for="tel"></label>
-            <input name="tel" id="tel" type="tel" placeholder="Телефон:" required>
-        </div>
-
-        <div class="form">
-            <label for="address"></label>
-            <input name="address" id="address" type="text" placeholder="Адрес:" required>
-        </div>
-
-        <div class="form">
-            <label for="password"></label>
-            <input name="password" id="password" type="password" placeholder="Пароль:" required>
-        </div>
-
-        <div class="buttons">
-           <button class="back">Назад</button>
-            <div class="button">
-                <label for="registr"></label>
-                <input name="registr" id="registr" type="submit" value="Регистрация">
-            </div>
-        </div>
-        <div class="text">Уже есть аккаунт?</div>
-        <a id="link">Войти</a>
-    </form>
-</div>
-
-<div class="bg"></div>
-
-<!-- /Reg -->
-
-<!-- Mini Reg -->
-<div class="reg__mini__bg">
-    <div class="reg mini">
-        <div class="reg__text">вход</div>
-        <form id="form" class="mini" action="" method="get">
-            <div class="form">
-                <label for="login"></label>
-                <input name="login" id="login" type="login" placeholder="Логин:" required>
-            </div>
-
-            <div class="form">
-                <label for="passwordd"></label>
-                <input name="passwordd" id="passwordd" type="passwordd" placeholder="Пароль:" required>
-            </div>
-
-            <div class="form">
-                <label for="text"></label>
-                <input name="text" id="user_type" type="text" placeholder="Кулинар/курьер/польз." required>
-            </div>
-
-            <div class="buttons">
-                <button class="back__mini">Назад</button>
-                <div class="button">
-                    <label for="registr"></label>
-                    <input name="registr" id="registr" type="submit" value="Вход">
+        <div class="container">
+            <div class="head">
+                <div class="head__item">
+                    <div class="head__text hr">Откройте волшебство вкуса
+                        с нашей кулинарией!</div>
+                    <div class="head__text">Изысканность в каждом
+                        кулинарном шаге!</div>
+                    <div class="head__text">Насладитесь нашей домашней
+                        выпечкой!</div>
+                    <div class="head__text">И не забудьте угостить всех!
+                        Приятного аппетита!</div>
                 </div>
             </div>
-        </form>
-    </div>
-</div>
-
-<!-- /Mini Reg -->
-
-
-
-
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium qui officia laborum dolorem earum ab veniam quidem asperiores, corporis quis voluptas eum totam facilis tempora velit sequi tenetur quae quod?
-    <section class="section">
-        <div class="container">
-            <div class="title">Информация</div>
-            <div class="images">
-                <div class="img"><img src="Images/1.png" alt=""></div>
-                <div class="img"><img src="Images/2.png" alt=""></div>
-            </div>
-            <div class="content">
-
-                <p>Добро пожаловать на наш веб-сайт! Мы рады предложить вам удобную услугу доставки из нашей Кулинарии
-                    прямо к вам домой или в офис.</p>
-                <p>Мы заботимся о вашем комфорте и уверены, что каждый день должен начинаться с вкусного и полезного
-                    завтрака, а обед и ужин должны быть насыщенными и разнообразными. Поэтому наше меню составлено с
-                    любовью и профессионализмом, чтобы удовлетворить самые изысканные вкусы.</p>
-                <p>Наши шеф-повары используют только свежие и качественные ингредиенты, чтобы приготовить для вас
-                    аппетитные блюда. Мы постоянно следим за новыми тенденциями в кулинарии, чтобы предложить вам
-                    современные и оригинальные рецепты.</p>
-                <p>У нас вы найдете широкий выбор блюд: от традиционных русских кулинарных шедевров до экзотических блюд
-                    мировой кухни. Наше меню постоянно обновляется, чтобы удовлетворить все ваши пожелания и
-                    предпочтения.</p>
-                <p>Заказать у нас доставку – это просто. Вам нужно всего лишь выбрать понравившиеся блюда на нашем сайте
-                    и оформить заказ онлайн или позвонить по указанному номеру. Мы гарантируем своевременную доставку и
-                    сохранение вкусовых качеств блюд.</p>
-                <p>Сделайте вашу жизнь проще и вкуснее, заказывайте доставку из Кулинарии прямо сейчас! Мы всегда готовы
-                    порадовать вас своими блюдами и обеспечить незабываемый гастрономический опыт.</p>
-                <p>Наша кулинария специализируется на предоставлении высококачественных блюд, которые можно заказать с
-                    доставкой прямо к вам домой или в офис. Мы стремимся обеспечить вам удобство и возможность
-                    наслаждаться вкусной едой без необходимости готовить самостоятельно.</p>
-
-            </div>
         </div>
-    </section>
+    </header>
 
-
-
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__items">
-                <div class="tel"><a href="#" target="blank">+7(953) 482-15-25</a></div>
-                <div class="gmail"><a href="#" target="blank">CookingHome@gmail.com</a></div>
-                <div class="support"><a href="#" target="blank">Тех.поддержка</a></div>
-            </div>
-        </div>
-    </footer>
-
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="script.js"></script>
 </body>
-
 </html>

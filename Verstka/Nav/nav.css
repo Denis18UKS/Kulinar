@@ -79,6 +79,6 @@
     align-items: center;
 }
 
-#cart {
+.cart {
     cursor: pointer;
 }

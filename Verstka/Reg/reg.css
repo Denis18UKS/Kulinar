@@ -37,7 +37,7 @@
 }
 
 .reg.mini {
-    height: 400px;
+    height: 418px;
     z-index: 99999;   
     position: fixed;
 }
@@ -144,6 +144,11 @@
 
 #form.mini {
     height: 25vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-between;
+    gap: 25px;
 }
 
 .form input {
