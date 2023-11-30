@@ -1,31 +1,19 @@
-// const regButton = document.querySelector('.reg__show');
-// const regModal = document.querySelector('.reg');
-// const bg = document.querySelector('.bg');
+document.getElementById('reg__button').addEventListener('click', function() {
+    document.querySelector('.bg').classList.add('active');
+    document.querySelector('.reg').classList.add('active');
+});
 
-// regButton.addEventListener('click', () => {
-//     regModal.classList.add('show');
-//     bg.classList.add('show');
-// });
+document.querySelector('.back').addEventListener('click', function() {
+    document.querySelector('.bg').classList.remove('active');
+    document.querySelector('.reg').classList.remove('active');
+});
 
+document.getElementById('link').addEventListener('click', function() {
+    document.querySelector('.bg').classList.remove('active');
+    document.querySelector('.reg').classList.remove('active');
+    document.querySelector('.reg__mini__bg').classList.add('active');
+});
 
-
-let btn = document.getElementById("reg__button");
-btn.addEventListener("click", showModal);
-
-function showModal(){
-    let modal = document.getElementsByClassName("reg")[0];
-    let bg = document.getElementsByClassName("bg")[0];
-    modal.style.top = "50%";
-    bg.style.display = "block";
-}
-
-let close = document.getElementsByClassName('close');
-btn.addEventListener("click", CloseWindow);
-
-function CloseWindow(){
-    let modal = document.getElementsByClassName("reg")[0];
-    let bg = document.getElementsByClassName("bg")[0];
-    modal.style.top = "-50%";
-    bg.style.display = "none";
-}
-
+document.querySelector('.back__mini').addEventListener('click', function() {
+    document.querySelector('.reg__mini__bg').classList.remove('active');
+})

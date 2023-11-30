@@ -13,7 +13,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Kavoon&family=Tillana:wght@400;700&display=swap" rel="stylesheet">
-    <script src="../Reg/reg.js"></script>
+    <script src="../Reg/reg.js" defer></script>
 </head>
 <body>
 
@@ -74,7 +74,7 @@
                             </defs>
                             </svg>
                     </div>
-                    <button id="reg__button" onclick="showModal()">Регистрация</button>
+                    <button id="reg__button">Регистрация</button>
                 </div>
             </nav>
         </div>
@@ -98,8 +98,7 @@
 
 <!-- Reg -->
 
-<button class="reg__show" data-modal="1">FIV</button>
-<div class="reg" data-modal="1">
+<div class="reg">
     <div class="reg__text">РЕГИСТРАЦИЯ</div>
     <form id="form" action="http://kulinar/reg.php" method="post">
         <div class="form">
@@ -133,7 +132,7 @@
         </div>
 
         <div class="buttons">
-            
+           <button class="back">Назад</button>
             <div class="button">
                 <label for="registr"></label>
                 <input name="registr" id="registr" type="submit" value="Регистрация">
@@ -142,7 +141,6 @@
         <div class="text">Уже есть аккаунт?</div>
         <a id="link">Войти</a>
     </form>
-    <button class="back" onclick="CloseWindow()">Назад</button>
 </div>
 
 <div class="bg"></div>
@@ -150,28 +148,29 @@
 <!-- /Reg -->
 
 <!-- Mini Reg -->
-
-<div class="reg mini" data-modal="2">
-    <div class="reg__text">вход</div>
-    <form id="form" class="mini" action="" method="get">
-        <div class="form">
-            <label for="login"></label>
-            <input name="login" id="login" type="email" placeholder="Почта:" required>
-        </div>
-
-        <div class="form">
-            <label for="passwordd"></label>
-            <input name="passwordd" id="passwordd" type="passwordd" placeholder="Пароль:" required>
-        </div>
-
-        <div class="buttons">
-            <div class="button">
-                <label for="registr"></label>
-                <input name="registr" id="registr" type="submit" value="Вход">
+<div class="reg__mini__bg">
+    <div class="reg mini">
+        <div class="reg__text">вход</div>
+        <form id="form" class="mini" action="" method="get">
+            <div class="form">
+                <label for="login"></label>
+                <input name="login" id="login" type="email" placeholder="Логин:" required>
             </div>
-        </div>
-    </form>
-    <button class="back__mini">Назад</button>
+
+            <div class="form">
+                <label for="passwordd"></label>
+                <input name="passwordd" id="passwordd" type="passwordd" placeholder="Пароль:" required>
+            </div>
+
+            <div class="buttons">
+                <button class="back__mini">Назад</button>
+                <div class="button">
+                    <label for="registr"></label>
+                    <input name="registr" id="registr" type="submit" value="Вход">
+                </div>
+            </div>
+        </form>
+    </div>
 </div>
 
 <!-- /Mini Reg -->

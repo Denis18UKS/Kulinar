@@ -1,15 +1,3 @@
-/* #win {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-} */
-
 .bg {
     width: 100vw;
     height: 100vh;
@@ -20,7 +8,14 @@
     left: 0;
     z-index: 9999;
 
-    display: none;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.bg.active,
+.reg.active {
+    opacity: 1;
+    visibility: visible;
 }
 
 .reg {
@@ -32,24 +27,44 @@
     padding: 30px 0;
 
     position: fixed;
-    top: -50%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 999999;   
+    z-index: 999999;
+
+    opacity: 0;
+    visibility: hidden;
 }
 
 .reg.mini {
-    top: 50%;
     height: 400px;
     z-index: 99999;   
-    position: relative;
+    position: fixed;
+}
+
+.reg__mini__bg {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.reg__mini__bg.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.reg__mini__bg.active .reg.mini {
+    opacity: 1;
+    visibility: visible;    
 }
 
 .back {
-    position: absolute; 
-    bottom: 30px;
-    left: 30px;
-
     background-color: #BC0000;
     border-radius: 40px;
     width: 100px;
@@ -150,14 +165,13 @@
 }
 
 .buttons {
-    width: 100%;
+    max-width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
-.buttons {
-    justify-content: end;
-    margin-right: 10%;
+.back {
+    margin-right: 20px;
 }
 
 .back,
@@ -178,16 +192,8 @@
 }
 
 .back__mini {
-    margin-left: 10%;
-    position: absolute;
-    bottom: 5%;
+    margin-right: 20px;
 }
-
-.back {
-    
-    position: absolute;
-    bottom: 5%;
-} 
 
 .text {
     width: 100%;
