@@ -1,18 +1,26 @@
-let amount = document.getElementsByClassName('number');
+let amount = Array.from(document.getElementsByClassName('number'));
 let onePrice = document.getElementsByClassName('oneprice');
 let morePrice = document.getElementsByClassName('moreprice');
 
-console.log(amount[0].textContent);
+let parent = document.getElementById('items');
+let child = document.getElementsByClassName('item');
 
+amount.forEach(
+    (el, key) => {
+    document.getElementsByClassName('minus')[key].addEventListener('click', function() {
+        amount[key].textContent = +(amount[key].textContent) - 1;
+        morePrice[key].textContent = +(amount[key].textContent) * +(onePrice[key].textContent);
 
-    document.querySelector('.minus').addEventListener('click', function() {
-        amount[0].textContent = +(amount[0].textContent) - 1;
+        if(+(amount[key].textContent) <= 0) {
+            items.removeChild(child[key]);
+        }
     });
     
-    document.querySelector('.plus').addEventListener('click', function() {
-        if (amount[0].textContent == 9) {
+    document.getElementsByClassName('plus')[key].addEventListener('click', function() {
+        if (amount[key].textContent == 9) {
             return;
         }
-        amount[0].textContent = +(amount[0].textContent) + 1;
+        amount[key].textContent = +(amount[key].textContent) + 1;
+        morePrice[key].textContent = +(amount[key].textContent) * +(onePrice[key].textContent);
     });
-
+});
