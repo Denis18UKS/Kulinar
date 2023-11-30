@@ -15,6 +15,7 @@ body {
     margin: 0 auto;
 }
 
+
 .header {
     margin-bottom: 200px;
 }
@@ -118,6 +119,11 @@ body {
 .cart-buttons {
     display: flex;
     justify-content: center;
+    transition: all 0.8s ease-in-out;
+}
+
+.cart-buttons:hover{
+    background-color: #000;
 }
 
 #clear {

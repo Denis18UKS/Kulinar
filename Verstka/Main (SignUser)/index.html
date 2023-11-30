@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="../Footer/footer.css">
     <link rel="stylesheet" href="../Reg/reg.css">
+    <link rel="stylesheet" href="../Main (SignUser)/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title>CookingHome</title>
@@ -101,7 +102,7 @@
 
 <!-- Reg -->
 
-<button class="reg__show" data-modal="1">FIV</button>
+<button class="reg__show" data-modal="1"></button>
 <div class="reg" data-modal="1">
     <div class="reg__text">РЕГИСТРАЦИЯ</div>
     <form id="form" action="" method="get">
@@ -154,27 +155,33 @@
 
 <!-- Mini Reg -->
 
-<div class="reg mini" data-modal="2">
-    <div class="reg__text">вход</div>
-    <form id="form" class="mini" action="" method="get">
-        <div class="form">
-            <label for="login"></label>
-            <input name="login" id="login" type="email" placeholder="Почта:" required>
-        </div>
-
-        <div class="form">
-            <label for="passwordd"></label>
-            <input name="passwordd" id="passwordd" type="passwordd" placeholder="Пароль:" required>
-        </div>
-
-        <div class="buttons">
-            <div class="button">
-                <label for="registr"></label>
-                <input name="registr" id="registr" type="submit" value="Вход">
+<div class="reg__mini__bg">
+    <div class="reg mini" data-modal="2">
+        <div class="reg__text">вход</div>
+        <form id="form" class="mini" action="../Main (SignUser)\index.html" method="get">
+            <div class="form">
+                <label for="login"></label>
+                <input name="login" id="login" type="login" placeholder="Логин:" required>
             </div>
+
+            <div class="form">
+                <label for="passwordd"></label>
+                <input name="passwordd" id="passwordd" type="passwordd" placeholder="Пароль:" required>
+            </div>
+
+            <div class="buttons">
+                <button class="back__mini">Закрыть</button>
+                <div class="button">
+                    <label for="registr"></label>
+                    <input name="registr" id="registr" type="submit" value="Вход">
+                </div>
+            </div>
+        </form>
+        <div id="buttons_typeusers">
+            <button onclick="window.location.href='../Main (Kulinar)/index.html'" style="border: none;">Кулинар</button>
+            <button onclick="window.location.href='../Main (Delivery)/index.html'" style="border: none;">Курьер</button>
         </div>
-    </form>
-    <button class="back__mini">Закрыть</button>
+    </div>
 </div>
 
 <!-- /Mini Reg -->
