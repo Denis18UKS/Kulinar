@@ -15,6 +15,10 @@ body {
     margin: 0 auto;
 }
 
+.nav__links{
+    width: 550px;
+    gap: 30px;
+}
 
 .header {
     margin-bottom: 200px;
