@@ -8,10 +8,14 @@
 
 .nav__links{
     display: flex;
-    width: 400px;
+    width: 550px;
     justify-content: space-between;
     align-items: center;
     gap: 25px;
+}
+
+.nav__btns{
+    gap: 35px;
 }
 
 

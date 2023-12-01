@@ -1,23 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="../Footer/footer.css">
     <link rel="stylesheet" href="../Nav/nav.css">
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="../Footer/footer.css">
     <link rel="stylesheet" href="../Reg/reg.css">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CookingHome</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Kavoon&family=Tillana:wght@400;700&display=swap" rel="stylesheet">
-    <script src="../Reg/reg.js"></script>
+<script src="../Reg/reg.js" defer></script>
 </head>
 <body>
-
-
 
 <header class="header">
     <div class="nav">
@@ -59,40 +57,29 @@
                 </div>
                 <div class="nav__links">
                     <div class="nav__link active"><a href="../Main/index.html">Главная</a></div>
-                    <div class="nav__link"><a href="../Reviews (for Delivery)/index.html">Отзывы</a></div>
+                    <div class="nav__link"><a href="../Reviews (for Kulinar)/index.html">Отзывы</a></div>
                     <div class="nav__link"><a href="../Info/index.html">Информация</a></div>
-                    <div class="nav__link"><a href="../Info/index.html">Заказы</a></div>
+                    <div class="nav__link"><a href="../Info/admin.html">Заказы</a></div>
                 </div>
                 <div class="nav__btns">
-                    <img src="icons/Group 115.png" alt="">
+                    <img src="icons/Group 116.png" alt="" id="modal-image" onclick="showModal()">
+                    <img src="icons/Group 114.png" alt="">
                     <button id="reg__button" onclick="window.location.href='../Main/index.html'">Выйти</button>
                 </div>
+                    
+                </div>
             </nav>
-        </div>
-    </div>
-    <div class="container">
-        <div class="head">
-            <div class="head__item">
-                <div class="head__text hr">Откройте волшебство вкуса
-                    с нашей кулинарией!</div>
-                <div class="head__text">Изысканность в каждом
-                    кулинарном шаге!</div>
-                <div class="head__text">Насладитесь нашей домашней
-                    выпечкой!</div>
-                <div class="head__text">И не забудьте угостить всех!
-                    Приятного аппетита!</div>
-            </div>
         </div>
     </div>
 </header>
 
 
+
 <!-- Reg -->
 
-<button class="reg__show" data-modal="1"></button>
-<div class="reg" data-modal="1">
+<div class="reg">
     <div class="reg__text">РЕГИСТРАЦИЯ</div>
-    <form id="form" action="" method="get">
+    <form id="form" action="http://kulinar/reg.php" method="post">
         <div class="form">
             <label for="name"></label>
             <input name="name" id="name" type="text" placeholder="Имя:" required>
@@ -124,7 +111,7 @@
         </div>
 
         <div class="buttons">
-            
+           <button class="back">Закрыть</button>
             <div class="button">
                 <label for="registr"></label>
                 <input name="registr" id="registr" type="submit" value="Регистрация">
@@ -133,7 +120,6 @@
         <div class="text">Уже есть аккаунт?</div>
         <a id="link">Войти</a>
     </form>
-    <button class="back" onclick="CloseWindow()">Закрыть</button>
 </div>
 
 <div class="bg"></div>
@@ -141,9 +127,8 @@
 <!-- /Reg -->
 
 <!-- Mini Reg -->
-
 <div class="reg__mini__bg">
-    <div class="reg mini" data-modal="2">
+    <div class="reg mini">
         <div class="reg__text">вход</div>
         <form id="form" class="mini" action="../Main (SignUser)\index.html" method="get">
             <div class="form">
@@ -175,277 +160,53 @@
 
 
 
-<section class="section">
-    <div class="container">
-        <h2 class="title">Пирожки</h2>
-        <div class="items">
-
-            <div class="item">
-                <div class="item__img"><img src="Images/Pirozhki/1.png" alt=""></div>
-                <div class="item__text">
-                    <div class="name">Пирожок с карт.</div>
-                    <div class="price">80Р</div>
-                </div>
-                <button class="item__btn">В корзину</button>
-            </div>
-
-            <div class="item">
-                <div class="item__img"><img src="Images/Pirozhki/2.png" alt=""></div>
-                <div class="item__text">
-                    <div class="name">Учпочмак</div>
-                    <div class="price">80Р</div>
-                </div>
-                <button class="item__btn">В корзину</button>
-            </div>
-
-            <div class="item">
-                <div class="item__img"><img src="Images/Pirozhki/3.png" alt=""></div>
-                <div class="item__text">
-                    <div class="name">Чебурек</div>
-                    <div class="price">128Р</div>
-                </div>
-                <button class="item__btn">В корзину</button>
-            </div>
-
-            <div class="more">Посмотреть больше</div>
-
-        </div>
-    </div>
-</section>
-
-
 
 <section class="section">
     <div class="container">
-        <h2 class="title">Пироги</h2>
-        <div class="items">
-
-            <div class="item">
-                <div class="item__img"><img src="Images/Pirogi/1.png" alt=""></div>
-                <div class="item__text">
-                    <div class="name">Мясной</div>
-                    <div class="price">580Р</div>
+        <h1 class="title">Отзывы</h1>
+        <div class="content">
+            <div class="review">
+                <div class="user">
+                    <div class="user__icon"><img src="../Images/ReviewsImg/UserIcon.png" alt=""></div>
+                    <div class="user__name">Мария</div>
+                    <div class="user__mark">(⭐⭐⭐⭐⭐):</div>
                 </div>
-                <button class="item__btn">В корзину</button>
+                <p>Эта кулинария - просто волшебная! Заказывала различные пироги и печенье, и каждый раз была в полном восторге. Качество и свежесть продуктов на высшем уровне. Тесто нежное, а начинки такие сочные и ароматные. Доставка всегда была оперативной, а упаковка отличная. Я очень рада, что открыла для себя эту кулинарию, и всем рекомендую попробовать их удивительную выпечку!</p>
             </div>
 
-            <div class="item">
-                <div class="item__img"><img src="Images/Pirogi/2.png" alt=""></div>
-                <div class="item__text">
-                    <div class="name">Вишневый</div>
-                    <div class="price">360Р</div>
+            <div class="review">
+                <div class="user">
+                    <div class="user__icon"><img src="../Images/ReviewsImg/UserIcon.png" alt=""></div>
+                    <div class="user__name">Александр</div>
+                    <div class="user__mark">(⭐⭐⭐⭐⭐):</div>
                 </div>
-                <button class="item__btn">В корзину</button>
+                <p>Это просто настоящая находка! Я заказывала у них пироги на день рождения, и все гости остались впечатлены. Вкус и качество просто потрясающие. Пироги сделаны с любовью и тщательным отношением к деталям. Тесто легкое и воздушное, а начинки наполнены вкусом. Доставка была своевременной, а обслуживание превзошло все ожидания. Кулинария Домашней Выпечки с доставкой – это настоящая находка для любителей выпечки!</p>
             </div>
 
-            <div class="item">
-                <div class="item__img"><img src="Images/Pirogi/3.png" alt=""></div>
-                <div class="item__text">
-                    <div class="name">Малиновый</div>
-                    <div class="price">420Р</div>
+            <div class="review">
+                <div class="user">
+                    <div class="user__icon"><img src="../Images/ReviewsImg/UserIcon.png" alt=""></div>
+                    <div class="user__name">Наталия</div>
+                    <div class="user__mark">(⭐⭐⭐⭐⭐):</div>
                 </div>
-                <button class="item__btn">В корзину</button>
+                <p>Я очень довольна услугами этой кулинарии с доставкой! Их еда просто восхитительна. Я заказывала у них несколько раз, и каждый раз они не перестают меня удивлять своим вкусом и качеством. Выбор на их меню огромный, и я всегда нахожу что-то по своему вкусу. <br>
+                Доставка всегда приходит вовремя, а еда приезжает горячей и свежей. Я особенно ценю их внимание к деталям - каждое блюдо упаковано аккуратно и безупречно, что добавляет ему привлекательности.</p>
             </div>
 
-            <div class="more">Посмотреть больше</div>
+            <div class="review">
+                <div class="user">
+                    <div class="user__icon"><img src="../Images/ReviewsImg/UserIcon.png" alt=""></div>
+                    <div class="user__name">Иван</div>
+                    <div class="user__mark">(⭐⭐⭐⭐⭐):</div>
+                </div>
+                <p>Я просто в восторге от этой кулинарии с доставкой! Их еда не только невероятно вкусная, но и свежая. Я заказывал у них на обед и ужин, и они всегда не подводят меня.<br>
+                Выбор блюд у них огромный, есть всё, от классических до экзотических кухонь. Я люблю экспериментировать с новыми вкусами, и они всегда меня удивляют своими оригинальными комбинациями.<br>
+                Доставка всегда приходит в точно указ...</p>
+            </div>
 
         </div>
-    </div>
-</section>
 
-
-
-<section class="section">
-    <div class="container">
-        <h2 class="title">Печенье</h2>
-        <div class="items">
-
-            <div class="item">
-                <div class="item__img"><img src="Images/Pechenki/1.png" alt=""></div>
-                <div class="item__text">
-                    <div class="name">С пудрой</div>
-                    <div class="price">75Р/кг</div>
-                </div>
-                <button class="item__btn">В корзину</button>
-            </div>
-
-            <div class="item">
-                <div class="item__img"><img src="Images/Pechenki/2.png" alt=""></div>
-                <div class="item__text">
-                    <div class="name">С начинкой</div>
-                    <div class="price">95Р/кг</div>
-                </div>
-                <button class="item__btn">В корзину</button>
-            </div>
-
-            <div class="item">
-                <div class="item__img"><img src="Images/Pechenki/3.png" alt=""></div>
-                <div class="item__text">
-                    <div class="name">Форменное</div>
-                    <div class="price">150Р/кг</div>
-                </div>
-                <button class="item__btn">В корзину</button>
-            </div>
-
-            <div class="more">Посмотреть больше</div>
-
-        </div>
-    </div>
-</section>
-
-
-
-<section class="section">
-    <div class="container">
-        <h2 class="title">Торты</h2>
-        <div class="items">
-
-            <div class="item">
-                <div class="item__img"><img src="Images/Torti/1.png" alt=""></div>
-                <div class="item__text">
-                    <div class="name">Наполеон</div>
-                    <div class="price">560Р</div>
-                </div>
-                <button class="item__btn">В корзину</button>
-            </div>
-
-            <div class="item">
-                <div class="item__img"><img src="Images/Torti/2.png" alt=""></div>
-                <div class="item__text">
-                    <div class="name">День и Ночь</div>
-                    <div class="price">700Р</div>
-                </div>
-                <button class="item__btn">В корзину</button>
-            </div>
-
-            <div class="item">
-                <div class="item__img"><img src="Images/Torti/3.png" alt=""></div>
-                <div class="item__text">
-                    <div class="name">Медовик</div>
-                    <div class="price">450Р</div>
-                </div>
-                <button class="item__btn">В корзину</button>
-            </div>
-
-            <div class="more">Посмотреть больше</div>
-
-        </div>
-    </div>
-</section>
-
-
-
-<section class="section">
-    <div class="container">
-        <h2 class="title">Куличи</h2>
-        <div class="items">
-
-            <div class="item">
-                <div class="item__img"><img src="Images/Kulichi/1.png" alt=""></div>
-                <div class="item__text">
-                    <div class="name">Кулич "ХВ"</div>
-                    <div class="price">640Р</div>
-                </div>
-                <button class="item__btn">В корзину</button>
-            </div>
-
-            <div class="item">
-                <div class="item__img"><img src="Images/Kulichi/2.png" alt=""></div>
-                <div class="item__text">
-                    <div class="name">Шок. кулич</div>
-                    <div class="price">500Р</div>
-                </div>
-                <button class="item__btn">В корзину</button>
-            </div>
-
-            <div class="item">
-                <div class="item__img"><img src="Images/Kulichi/3.png" alt=""></div>
-                <div class="item__text">
-                    <div class="name">Кулич весенний</div>
-                    <div class="price">450Р</div>
-                </div>
-                <button class="item__btn">В корзину</button>
-            </div>
-
-            <div class="more">Посмотреть больше</div>
-
-        </div>
-    </div>
-</section>
-
-
-
-<section class="section">
-    <div class="container">
-        <h2 class="title">Напитки</h2>
-        <div class="items">
-
-            <div class="item">
-                <div class="item__img"><img src="Images/Napitki/1.png" alt=""></div>
-                <div class="item__text center">
-                    <div class="name">Сок</div>
-                </div>
-                <button class="item__btn">В корзину</button>
-            </div>
-
-            <div class="item">
-                <div class="item__img"><img src="Images/Napitki/2.png" alt=""></div>
-                <div class="item__text center">
-                    <div class="name">Лимонад</div>
-                </div>
-                <button class="item__btn">В корзину</button>
-            </div>
-
-            <div class="item">
-                <div class="item__img"><img src="Images/Napitki/3.png" alt=""></div>
-                <div class="item__text center">
-                    <div class="name">Морс</div>
-                </div>
-                <button class="item__btn">В корзину</button>
-            </div>
-
-            <div class="more">Посмотреть больше</div>
-
-        </div>
-    </div>
-</section>
-
-
-
-<section class="section">
-    <div class="container">
-        <h2 class="title">Десерты</h2>
-        <div class="items">
-
-            <div class="item">
-                <div class="item__img"><img src="Images/Pesochki/1.png" alt=""></div>
-                <div class="item__text">
-                    <div class="name">Space Маффин</div>
-                    <div class="price">80Р/шт</div>
-                </div>
-                <button class="item__btn">В корзину</button>
-            </div>
-
-            <div class="item">
-                <div class="item__img"><img src="Images/Pesochki/2.png" alt=""></div>
-                <div class="item__text center">
-                    <div class="name">Трайфл</div>
-                </div>
-                <button class="item__btn">В корзину</button>
-            </div>
-
-            <div class="item">
-                <div class="item__img"><img src="Images/Pesochki/3.png" alt=""></div>
-                <div class="item__text">
-                    <div class="name">Фруктовый пай</div>
-                    <div class="price">380Р</div>
-                </div>
-                <button class="item__btn">В корзину</button>
-            </div>
-
-            <div class="more">Посмотреть больше</div>
-
-        </div>
+        <div class="rev__btn">Посмотреть еще</div>
     </div>
 </section>
 
