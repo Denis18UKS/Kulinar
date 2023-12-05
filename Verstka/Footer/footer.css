@@ -6,8 +6,16 @@
     box-sizing: border-box;
 }
 
+.container {
+    max-width: 1520px;
+    margin: 0 auto;
+}
+
+body {
+    background: #F6D79D;
+}
+
 .footer {
-    margin-top: 150px;
     background-color: #FF8C00;
     box-shadow: 0px -4px 25px 1px rgba(0, 0, 0, 0.54);
 }

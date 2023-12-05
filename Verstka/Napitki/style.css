@@ -8,7 +8,7 @@
 
 .container {
     max-width: 1520px;
-    margin: 0 auto;
+    margin: 0 auto
 }
 
 body {
@@ -24,9 +24,7 @@ body {
     color: #000;
     text-align: center;
     font-size: 76px;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
     margin-bottom: 50px;
 }
 
@@ -34,6 +32,8 @@ body {
     display: flex;
     justify-content: space-between;
     margin-bottom: 200px;
+    width: 100%;
+    flex-wrap: wrap;
 }
 
 .items.last {
@@ -52,7 +52,22 @@ body {
     justify-content: space-between;
     font-family: 'Inter', sans-serif;
     font-size: 40px;
-    margin-bottom: 15px;
+    margin-bottom: 15px;   
+}
+
+.content.center {
+    display: block;
+} 
+
+.content.center .name {
+    text-align: center;
+} 
+
+.type {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .button {
@@ -64,25 +79,35 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 auto;
+    margin: 30px auto 0;
     border-radius: 45px;
+    border: 0;
     font-family: 'Inter', sans-serif;
     font-size: 40px;
     cursor: pointer;
 }
 
+.item.fst,
+.item.scd,
+.item.trd {
+    height: 100%;
+}
+
 .img.fst,
-.img.fst img {
+.img.fst img,
+.item.fst {
     max-width: 520px;
 }
 
 .img.scd,
-.img.scd img {
+.img.scd img,
+.item.scd {
     max-width: 414px;
 }
 
 .img.trd,
-.img.trd img {
+.img.trd img,
+.item.trd {
     max-width: 484px;
 }
 
@@ -109,3 +134,45 @@ body {
     font-size: 40px;
     text-align: center;
 }
+
+input[type='radio'] {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #000;
+    position: relative;
+}
+
+input[type="radio"]:checked:after {
+    position: absolute;
+    content: '';
+    width: 18px;
+    height: 18px;
+    background-color: #000;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.warning {
+    color: #F00;
+    font-family: 'Inter', sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+    margin: 16px 0 0;
+}
+
+.type__price label {
+    font-size: 30px;
+}
+
+.title2 {
+    color: #000;
+    text-align: center;
+    font-family: 'Tillana', serif;
+    font-size: 76px;
+    font-weight: 700;
+    margin: 30px auto;
+}
+

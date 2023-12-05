@@ -6,6 +6,15 @@
     box-sizing: border-box;
 }
 
+.container {
+    max-width: 1520px;
+    margin: 0 auto;
+}
+
+body {
+    background: #F6D79D;
+}
+
 .nav {
     background-color: #FFA500;
     width: 100%;
@@ -81,4 +90,38 @@
 
 .cart {
     cursor: pointer;
+}
+
+#reg__button {
+    width: 200px;
+    height: 65px;
+    border: 0;
+    border-radius: 100px;
+    background: #FFA500;
+    box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.89);
+    display: flex;
+    color: #FFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Impact;
+    font-size: 28.8px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-left: 32px;
+    transition: all 0.6s ease-in-out;
+
+}
+
+#reg__button:active {
+    box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.89) inset;
+    color: rgba(255, 255, 255, 0.79);
+}
+
+#reg__button:hover{
+    background-color: #FF8C00;
+    transition: all 0.6s ease-in-out;
 }

@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../Nav/nav.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../Footer/footer.css">
+    <link rel="stylesheet" href="../Reg/reg.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CookingHome</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Kavoon&family=Tillana:wght@400;700&display=swap" rel="stylesheet">
+
+    <script src="../Reg/reg.js" defer></script>
+</head>
+<body>
+
+
+<header class="header">
+    <div class="nav">
+        <div class="container">
+            <nav class="nav__items"> 
+                <div class="logo">
+                    <div class="logo__icon"><img src="../Images/logo.png" alt=""></div>
+                    <div class="logo__text">CookingHome</div>
+                </div>
+                <div class="nav__links">
+                    <div class="nav__link"><a href="../Main/index.html">Главная</a></div>
+                    <div class="nav__link"><a href="../Reviews/index.html">Отзывы</a></div>
+                    <div class="nav__link"><a href="../Info/index.html">Информация</a></div>
+                </div>
+                <div class="nav__btns">
+                    <div class="cart"><img src="../Images/cart.png" alt=""></div>
+                    <button id="reg__button">Регистрация</button>
+                </div>
+            </nav>
+        </div>
+    </div>
+    </div>
+</header>
+
+<!-- Reg -->
+<div class="reg__overlay">
+    <div class="reg">
+        <div class="reg__text">РЕГИСТРАЦИЯ</div>
+        <form id="form" action="http://groupprojectkarpovandxamitov/Kulinar/Verstka/reg.php" method="post">
+            <div class="form">
+                <label for="name"></label>
+                <input name="name" id="name" type="text" placeholder="Имя:" required>
+            </div>
+
+            <div class="form">
+                <label for="surname"></label>
+                <input name="surname" id="surname" type="text" placeholder="Фамилия:" required>
+            </div>
+
+            <div class="form">
+                <label for="email"></label>
+                <input name="email" id="email" type="email" placeholder="Почта:" required>
+            </div>
+
+            <div class="form">
+                <label for="tel"></label>
+                <input name="tel" id="tel" type="tel" placeholder="Телефон:" required>
+            </div>
+
+            <div class="form">
+                <label for="address"></label>
+                <input name="address" id="address" type="text" placeholder="Адрес:" required>
+            </div>
+
+            <div class="form">
+                <label for="password"></label>
+                <input name="password" id="password" type="password" placeholder="Пароль:" required>
+            </div>
+
+            <div class="buttons">
+                <button class="back">Закрыть</button>
+                <div class="reg_btns">
+                    <label for="registr"></label>
+                    <input name="registr" id="registr" type="submit" value="Регистрация">
+                </div>
+            </div>
+            <div class="text">Уже есть аккаунт?</div>
+            <a id="link">Войти</a>
+        </form>
+    </div>
+</div>
+
+<!-- /Reg -->
+
+<!-- Mini Reg -->
+<div class="reg__overlay-mini">
+    <div class="reg mini">
+        <div class="reg__text">вход</div>
+        <form id="form" class="mini" action="../Main (SignUser)\index.html" method="get">
+            <div class="form">
+                <label for="login"></label>
+                <input name="login" id="login" type="login" placeholder="Логин:" required>
+            </div>
+
+            <div class="form">
+                <label for="passwordd"></label>
+                <input name="passwordd" id="passwordd" type="passwordd" placeholder="Пароль:" required>
+            </div>
+
+            <div class="buttons">
+                <button class="back__mini">Закрыть</button>
+                <div class="reg_bnts">
+                    <label for="registr"></label>
+                    <input name="registr" id="registr" type="submit" value="Вход">
+                </div>
+            </div>
+
+            <div class="select">
+                <label for="select"></label>
+                <select name="select" id="select">
+                    <option value="User">Пользователь</option>
+                    <option value="Kulinar">Кулинар</option>
+                    <option value="Delivery">Курьер</option>
+                </select>
+            </div>
+        </form>
+    </div>
+</div>
+<!-- /Mini Reg -->
+
+
+<section class="section">
+    <div class="container">
+        <h1 class="title">Напитки</h1>
+
+        <div class="items">
+            <div class="item fst">
+                <div class="img fst"><img src="./Images/1.png" alt=""></div>
+                <div class="content center">
+                    <div class="name">Сок</div>
+                    <form class="types" method="get">
+                        <div class="type">
+                            <div class="type__name">Манговый</div>
+                            <div class="type__price">
+                                <label for="mangoviy">90₽</label>
+                                <input name="sok" id="mangoviy" value="mangoviy" type="radio">
+                            </div>
+                        </div>
+                        <div class="type">
+                            <div class="type__name">Яблочный</div>
+                            <div class="type__price">
+                                <label for="yablochniy">80₽</label>
+                                <input name="sok" id="yablochniy" value="yablochniy" type="radio">
+                            </div>
+                        </div>
+                        <div class="type">
+                            <div class="type__name">Апельсиновый</div>
+                            <div class="type__price">
+                                <label for="apelsinoviy">99₽</label>
+                                <input name="sok" id="apelsinoviy" value="apelsinoviy" type="radio">
+                            </div>
+                        </div>
+                        <div class="type">
+                            <div class="type__name">Банановый</div>
+                            <div class="type__price">
+                                <label for="bananoviy">60₽</label>
+                                <input name="sok" id="bananoviy" value="bananoviy" type="radio">
+                            </div>
+                        </div>
+                        <div class="warning">!цена указана за литр!</div>
+                        <label for="sok_btn"></label>
+                        <button id="sok_btn" class="button">В корзину</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="item scd">
+                <div class="img scd"><img src="./Images/2.png" alt=""></div>
+                <div class="content center">
+                    <div class="name">Лимонад</div>
+                    <form class="types" method="get">
+                        <div class="type">
+                            <div class="type__name">Дюшес</div>
+                            <div class="type__price">
+                                <label for="dushes">70₽</label>
+                                <input name="limonad" id="dushes" value="dushes" type="radio">
+                            </div>
+                        </div>
+                        <div class="type">
+                            <div class="type__name">Барбарис</div>
+                            <div class="type__price">
+                                <label for="barbaris">80₽</label>
+                                <input name="limonad" id="barbaris" value="barbaris" type="radio">
+                            </div>
+                        </div>
+                        <div class="type">
+                            <div class="type__name">Обычный</div>
+                            <div class="type__price">
+                                <label for="obichniy">65₽</label>
+                                <input name="limonad" id="obichniy" value="obichniy" type="radio">
+                            </div>
+                        </div>
+                        <div class="type">
+                            <div class="type__name">Тархун</div>
+                            <div class="type__price">
+                                <label for="tarhun">40₽</label>
+                                <input name="limonad" id="tarhun" value="tarhun" type="radio">
+                            </div>
+                        </div>
+                        <div class="type">
+                            <div class="type__name">Таёжный</div>
+                            <div class="type__price">
+                                <label for="tayojniy">50₽</label>
+                                <input name="limonad" id="tayojniy" value="tayojniy" type="radio">
+                            </div>
+                        </div>
+                        <label for="limonad_btn"></label>
+                        <button id="limonad_btn" class="button">В корзину</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="item trd">
+                <div class="img trd"><img src="./Images/3.png" alt=""></div>
+                <div class="content center">
+                    <div class="name">Морс</div>
+                    <form class="types" method="get">
+                        <div class="type">
+                            <div class="type__name">Брусничный</div>
+                            <div class="type__price">
+                                <label for="brusnichniy">100₽</label>
+                                <input name="mors" id="brusnichniy" value="brusnichniy" type="radio">
+                            </div>
+                        </div>
+                        <div class="type">
+                            <div class="type__name">Клубничный</div>
+                            <div class="type__price">
+                                <label for="klubnichniy">110₽</label>
+                                <input name="mors" id="klubnichniy" value="klubnichniy" type="radio">
+                            </div>
+                        </div>
+                        <div class="type">
+                            <div class="type__name">Малиновый</div>
+                            <div class="type__price">
+                                <label for="malinoviy">120₽</label>
+                                <input name="mors" id="malinoviy" value="malinoviy" type="radio">
+                            </div>
+                        </div>
+                        <div class="warning">!цена указана за литр!</div>
+                        <label for="mors_btn"></label>
+                        <button id="mors_btn" class="button">В корзину</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="items">
+            <div class="item fst">
+                <div class="img fst"><img src="./Images/4.png" alt=""></div>
+                <div class="content center">
+                    <div class="name">Чай</div>
+                    <form class="types" method="get">
+                        <div class="type">
+                            <div class="type__name">Зелёный</div>
+                            <div class="type__price">
+                                <label for="zeleniy">35₽</label>
+                                <input name="chai" id="zeleniy" value="zeleniy" type="radio">
+                            </div>
+                        </div>
+                        <div class="type">
+                            <div class="type__name">Чёрный</div>
+                            <div class="type__price">
+                                <label for="cherniy">30₽</label>
+                                <input name="chai" id="cherniy" value="cherniy" type="radio">
+                            </div>
+                        </div>
+                        <div class="type">
+                            <div class="type__name">Ромашка</div>
+                            <div class="type__price">
+                                <label for="romashka">40₽</label>
+                                <input name="chai" id="romashka" value="romashka" type="radio">
+                            </div>
+                        </div>
+                        <div class="type">
+                            <div class="type__name">Красный</div>
+                            <div class="type__price">
+                                <label for="krasniy">35₽</label>
+                                <input name="chai" id="krasniy" value="krasniy" type="radio">
+                            </div>
+                        </div>
+                        <label for="chai_btn"></label>
+                        <button id="chai_btn" class="button">В корзину</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="item scd">
+                <div class="img scd"><img src="./Images/5.png" alt=""></div>
+                <div class="content center">
+                    <div class="name">Молочный коктейль</div>
+                    <form class="types" method="get">
+                        <div class="type">
+                            <div class="type__name">Банановый</div>
+                            <div class="type__price">
+                                <label for="bananoviy">115₽</label>
+                                <input name="molochniy_kokteyl" id="bananoviy" value="bananoviy" type="radio">
+                            </div>
+                        </div>
+                        <div class="type">
+                            <div class="type__name">Ванильный</div>
+                            <div class="type__price">
+                                <label for="vanilniy">105₽</label>
+                                <input name="molochniy_kokteyl" id="vanilniy" value="vanilniy" type="radio">
+                            </div>
+                        </div>
+                        <div class="type">
+                            <div class="type__name">Шоколадный</div>
+                            <div class="type__price">
+                                <label for="shokoladiy">130₽</label>
+                                <input name="molochniy_kokteyl" id="shokoladiy" value="shokoladiy" type="radio">
+                            </div>
+                        </div>
+                        <div class="type">
+                            <div class="type__name">Клубничный</div>
+                            <div class="type__price">
+                                <label for="klubnicniy">150₽</label>
+                                <input name="molochniy_kokteyl" id="klubnicniy" value="klubnicniy" type="radio">
+                            </div>
+                        </div>
+                        <div class="warning">!цена указана за стакан!</div>
+                        <label for="molochniy_kokteyl_btn"></label>
+                        <button id="molochniy_kokteyl_btn" class="button">В корзину</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="item trd">
+                <div class="img trd"><img src="./Images/6.png" alt=""></div>
+                <div class="content center">
+                    <div class="name">Компот</div>
+                    <form class="types" method="get">
+                        <div class="type">
+                            <div class="type__name">Клубничный</div>
+                            <div class="type__price">
+                                <label for="klubnichniy">100₽</label>
+                                <input name="kompot" id="klubnichniy" value="klubnichniy" type="radio">
+                            </div>
+                        </div>
+                        <div class="type">
+                            <div class="type__name">Смородиновый</div>
+                            <div class="type__price">
+                                <label for="smorodinoviy">80₽</label>
+                                <input name="kompot" id="smorodinoviy" value="smorodinoviy" type="radio">
+                            </div>
+                        </div>
+                        <div class="type">
+                            <div class="type__name">Вишнёвый</div>
+                            <div class="type__price">
+                                <label for="vishneviy">90₽</label>
+                                <input name="kompot" id="vishneviy" value="vishneviy" type="radio">
+                            </div>
+                        </div>
+                        <div class="type">
+                            <div class="type__name">Абрикосовый</div>
+                            <div class="type__price">
+                                <label for="abrikosoviy">120₽</label>
+                                <input name="kompot" id="abrikosoviy" value="abrikosoviy" type="radio">
+                            </div>
+                        </div>
+                        <div class="warning">!цена указана за литр<ydiv>
+                        <label for="kompot_btn"></label>
+                        <button id="kompot_btn" class="button">В корзину</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="title2">К чаю</h2>
+
+        <div class="items">
+            <div class="item">
+                <div class="img fst"><img src="./Images/7.png" alt=""></div>
+                <div class="content">
+                    <div class="name">Кекс</div>
+                    <div class="price">40₽</div>
+                </div>
+                <div class="button">В корзину</div>
+            </div>
+
+            <div class="item">
+                <div class="img scd"><img src="./Images/8.png" alt=""></div>
+                <div class="content">
+                    <div class="name">Пирожные</div>
+                    <div class="price">95₽</div>
+                </div>
+                <div class="button">В корзину</div>
+            </div>
+            
+            <div class="item">
+                <div class="img trd"><img src="./Images/9.png" alt=""></div>
+                <div class="content">
+                    <div class="name">Эклеры SW</div>
+                    <div class="price">150₽</div>
+                </div>
+                <div class="button">В корзину</div>
+            </div>
+        </div>
+
+        <div class="items">
+            <div class="item">
+                <div class="img fst"><img src="./Images/10-1.png" alt=""><img src="./Images/10-2.png" alt=""></div>
+                <div class="content center">
+                    <div class="name">Пончики</div>
+                    <form action="" method="get" class="types">
+                        <div class="type">
+                            <div class="type__name">Пончики с глаз.</div>
+                            <div class="type__price">
+                                <label for="ponchiki_s_glaz">100₽</label>
+                                <input name="sok" id="ponchiki_s_glaz" value="ponchiki_s_glaz" type="radio">
+                            </div>
+                        </div>
+                        <div class="type">
+                            <div class="type__name">Пончики с сах.пудр</div>
+                            <div class="type__price">
+                                <label for="poncchiki_s_sah_pudr">95₽</label>
+                                <input name="sok" id="poncchiki_s_sah_pudr" value="poncchiki_s_sah_pudr" type="radio">
+                            </div>
+                        </div>
+                        <label for="sok_btn"></label>
+                        <button id="sok_btn" class="button">В корзину</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="img scd"><img src="./Images/11.png" alt=""></div>
+                <div class="content">
+                    <div class="name">Пир. в глаз.</div>
+                    <div class="price">105₽</div>
+                </div>
+                <div class="nope">Нет в наличии</div>
+            </div>
+            
+            <div class="item">
+                <div class="img trd"><img src="./Images/12.png" alt=""></div>
+                <div class="content">
+                    <div class="name">Макаронс</div>
+                    <div class="price">600₽</div>
+                </div>
+                <div class="warning">!цена указана за коробку!</div>
+                <div class="button">В корзину</div>
+            </div>
+        </div>
+
+        <div class="items last">
+
+            <div class="item">
+                <div class="img fst"><img src="./Images/13.png" alt=""></div>
+                <div class="content">
+                    <div class="name">Кекс в глазури</div>
+                    <div class="price">40₽</div>
+                </div>
+                <div class="nope">Нет в наличии</div>
+            </div>
+
+            <div class="item">
+                <div class="img scd"><img src="./Images/14.png" alt=""></div>
+                <div class="content">
+                    <div class="name">Пир. в ван. глаз</div>
+                    <div class="price">95₽</div>
+                </div>
+                <div class="nope">Нет в наличии</div>
+            </div>
+            
+            <div class="item">
+                <div class="img trd"><img src="./Images/15.png" alt=""></div>
+                <div class="content">
+                    <div class="name">Эклеры SW</div>
+                    <div class="price">150₽</div>
+                </div>
+                <div class="nope">Нет в наличии</div>
+            </div>
+            
+        </div>
+
+    </div>
+
+
+    <div class="main__btn" onclick="location.href = '../Main/index.html'">На главную</div>
+
+</section>
+
+
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__items">
+            <div class="tel"><a href="#" target="blank">+7(953) 482-15-25</a></div>
+            <div class="gmail"><a href="#" target="blank">CookingHome@gmail.com</a></div>
+            <div class="support"><a href="#" target="blank">Тех.поддержка</a></div>
+        </div>
+    </div>
+</footer>

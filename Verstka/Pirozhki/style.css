@@ -39,6 +39,7 @@ body {
 .items.last {
     margin-bottom: 50px;
 }
+
 .img {
     height: 310px;
     background-color: red;  
@@ -99,10 +100,7 @@ body {
     justify-content: center;
     margin: 0 auto;
     cursor: pointer;
-}
-
-.main__btn a {
-    text-decoration: none;
+    margin-bottom: 200px;
     color: #000;
 }
 

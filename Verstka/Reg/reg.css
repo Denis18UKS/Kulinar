@@ -1,4 +1,5 @@
-.bg {
+.reg__overlay,
+.reg__overlay-mini {
     width: 100vw;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.5);
@@ -7,13 +8,22 @@
     top: 0;
     left: 0;
     z-index: 9999;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     opacity: 0;
     visibility: hidden;
 }
 
-.bg.active,
-.reg.active {
+.reg__overlay.active,
+.reg__overlay-mini.active {
+    opacity: 1;
+    visibility: visible;   
+}
+
+.reg__overlay.active {
     opacity: 1;
     visibility: visible;
 }
@@ -25,43 +35,12 @@
     background: #FFBB68;
     box-shadow: 0px 4px 11px 12px rgba(0, 0, 0, 0.43);
     padding: 30px 0;
-
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 999999;
-
-    opacity: 0;
-    visibility: hidden;
 }
 
 .reg.mini {
     height: 418px;
     z-index: 99999;   
     position: fixed;
-}
-
-.reg__mini__bg {
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.5);
-    top: 0;
-    left: 0;
-    z-index: 10000;
-    visibility: hidden;
-    opacity: 0;
-}
-
-.reg__mini__bg.active {
-    opacity: 1;
-    visibility: visible;
-}
-
-.reg__mini__bg.active .reg.mini {
-    opacity: 1;
-    visibility: visible;    
 }
 
 .back {
@@ -74,52 +53,6 @@
     cursor: pointer;
     font-size: 24px;
     font-family: Impact;
-}
-
-.reg.show {
-    opacity: 1;
-    transform: scale(1);
-}
-
-.bg.show {
-    opacity: 0.5;
-}
-
-
-
-
-#reg__button {
-    width: 200px;
-    height: 65px;
-    border: 0;
-    border-radius: 100px;
-    background: #FFA500;
-    box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.89);
-    display: flex;
-    color: #FFF;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    font-family: Impact;
-    font-size: 28.8px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    margin-left: 32px;
-    transition: all 0.6s ease-in-out;
-
-}
-
-#reg__button:active {
-    box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.89) inset;
-    color: rgba(255, 255, 255, 0.79);
-}
-
-#reg__button:hover{
-    background-color: #FF8C00;
-    transition: all 0.6s ease-in-out;
 }
 
 .reg__text {
@@ -224,3 +157,13 @@
     text-decoration: underline;
 }
 
+#select {
+    position: absolute;
+    bottom: 8px;
+    left: 20px;
+    background-color: #BC0000;
+    border: 0;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+}
