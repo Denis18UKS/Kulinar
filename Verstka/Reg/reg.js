@@ -14,11 +14,13 @@ document.querySelector('.back__mini').addEventListener('click', function(event) 
     document.querySelector('.reg__overlay-mini').classList.remove('active');
 });
 document.getElementById('registr').addEventListener('click', function() {
-        if (select.value == 'User') {
-            document.location.href = '../Main (Kulnar)/index.html';
-        } else if (select.value == 'Kulinar') {
-            document.location.href = '../Main (SignUser)/index.html';
-        } else if (select.value == 'Delivery') {
-            document.location.href = '../Main (Delivery)/index.html';
-        }
+    document.location.href = '../Main (SignUser)/index.html';
+});
+document.getElementById('reg__mini').addEventListener('click', function(event) {
+    event.preventDefault();
+    let select = document.getElementById('select').value;
+    if (select === 'User') {
+        document.location.href = 'Pirogi/index.html';
+    }
+    
 });
