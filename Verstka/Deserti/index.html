@@ -138,26 +138,56 @@
             <div class="item">
                 <div class="img fst"><img src="./Images/1.png" alt=""></div>
                 <div class="content">
-                    <div class="name">Пирожки с карт.</div>
-                    <div class="price">30₽</div>
+                    <div class="name">Space Маффин</div>
+                    <div class="price">80₽/шт</div>
                 </div>
                 <div class="button">В корзину</div>
             </div>
 
             <div class="item">
-                <div class="img scd"><img src="./Images/2.png" alt=""></div>
-                <div class="content">
-                    <div class="name">Учпочмак</div>
-                    <div class="price">40₽</div>
+                <div class="img"><img src="./Images/2.png" alt=""></div>
+                <div class="content center">
+                    <div class="name">Трайфл</div>
+                    <form class="types" method="get">
+                        <div class="type">
+                            <div class="type__name">Малиновый</div>
+                            <div class="type__price">
+                                <label for="mangoviy">80₽</label>
+                                <input name="traifl" id="mangoviy" value="mangoviy" type="radio">
+                            </div>
+                        </div>
+                        <div class="type">
+                            <div class="type__name">Шоколадный</div>
+                            <div class="type__price">
+                                <label for="shokoladniy">80₽</label>
+                                <input name="traifl" id="shokoladniy" value="shokoladniy" type="radio">
+                            </div>
+                        </div>
+                        <div class="type">
+                            <div class="type__name">Вишнёвый</div>
+                            <div class="type__price">
+                                <label for="vishneviy">80₽</label>
+                                <input name="traifl" id="vishneviy" value="vishneviy" type="radio">
+                            </div>
+                        </div>
+                        <div class="type">
+                            <div class="type__name">Клубничный</div>
+                            <div class="type__price">
+                                <label for="klubnihcniy">80₽</label>
+                                <input name="traifl" id="klubnihcniy" value="klubnihcniy" type="radio">
+                            </div>
+                        </div>
+                        <label for="sok_btn"></label>
+                        <button id="sok_btn" class="button">В корзину</button>
+                    </form>
                 </div>
-                <div class="button">В корзину</div>
             </div>
             
             <div class="item">
                 <div class="img trd"><img src="./Images/3.png" alt=""></div>
                 <div class="content">
-                    <div class="name">Чебурек</div>
-                    <div class="price">128₽</div>
+                    <div class="name">Фруктовый пай</div>
+                    <div class="price">380₽</div>
                 </div>
                 <div class="button">В корзину</div>
             </div>
@@ -168,8 +198,8 @@
             <div class="item">
                 <div class="img fst"><img src="./Images/4.png" alt=""></div>
                 <div class="content">
-                    <div class="name">Пирожки с кап.</div>
-                    <div class="price">60₽</div>
+                    <div class="name">Черничное морож.</div>
+                    <div class="price">70₽</div>
                 </div>
                 <div class="button">В корзину</div>
             </div>
@@ -177,8 +207,8 @@
             <div class="item">
                 <div class="img scd"><img src="./Images/5.png" alt=""></div>
                 <div class="content">
-                    <div class="name">Пир. с тыквой</div>
-                    <div class="price">80₽</div>
+                    <div class="name">Чизкейк</div>
+                    <div class="price">70₽</div>
                 </div>
                 <div class="button">В корзину</div>
             </div>
@@ -186,8 +216,8 @@
             <div class="item">
                 <div class="img trd"><img src="./Images/6.png" alt=""></div>
                 <div class="content">
-                    <div class="name">Пирожки с яйцом</div>
-                    <div class="price">80₽</div>
+                    <div class="name">Помадка</div>
+                    <div class="price">150₽</div>
                 </div>
                 <div class="button">В корзину</div>
             </div>
@@ -198,8 +228,8 @@
             <div class="item">
                 <div class="img fst"><img src="./Images/7.png" alt=""></div>
                 <div class="content">
-                    <div class="name">Пирожки с сыром</div>
-                    <div class="price">75₽</div>
+                    <div class="name">Карам. Пудинг</div>
+                    <div class="price">60₽</div>
                 </div>
                 <div class="button">В корзину</div>
             </div>
@@ -207,8 +237,8 @@
             <div class="item">
                 <div class="img scd"><img src="./Images/8.png" alt=""></div>
                 <div class="content">
-                    <div class="name">Пир. с овощами</div>
-                    <div class="price">80₽</div>
+                    <div class="name">Суфле</div>
+                    <div class="price">50₽</div>
                 </div>
                 <div class="button">В корзину</div>
             </div>
@@ -216,9 +246,10 @@
             <div class="item">
                 <div class="img trd"><img src="./Images/9.png" alt=""></div>
                 <div class="content">
-                    <div class="name">Пирожки с мясом</div>
-                    <div class="price">128₽</div>
+                    <div class="name">Брауни</div>
+                    <div class="price">100₽</div>
                 </div>
+                <div class="warning">!цена указана за 3 штуки!</div>
                 <div class="button">В корзину</div>
             </div>
             
@@ -227,19 +258,42 @@
         <div class="items">
 
             <div class="item">
-                <div class="img fst"><img src="./Images/10.png" alt=""></div>
-                <div class="content">
-                    <div class="name">Пирожки с кур.</div>
-                    <div class="price">80₽</div>
+                <div class="img"><img src="./Images/10.png" alt=""></div>
+                <div class="content center">
+                    <div class="name">Десерт в стакане</div>
+                    <form class="types" method="get">
+                        <div class="type">
+                            <div class="type__name">Шоколадный</div>
+                            <div class="type__price">
+                                <label for="shokoladiy">200₽</label>
+                                <input name="desert_v_stakane" id="shokoladiy" value="shokoladiy" type="radio">
+                            </div>
+                        </div>
+                        <div class="type">
+                            <div class="type__name">Карамельный</div>
+                            <div class="type__price">
+                                <label for="karaemlniy">250₽</label>
+                                <input name="desert_v_stakane" id="karaemlniy" value="karaemlniy" type="radio">
+                            </div>
+                        </div>
+                        <div class="type">
+                            <div class="type__name">С посыпкой</div>
+                            <div class="type__price">
+                                <label for="s_posipkoy">220₽</label>
+                                <input name="desert_v_stakane" id="s_posipkoy" value="s_posipkoy" type="radio">
+                            </div>
+                        </div>
+                        <label for="sok_btn"></label>
+                        <button id="sok_btn" class="button">В корзину</button>
+                    </form>
                 </div>
-                <div class="button">В корзину</div>
             </div>
 
             <div class="item">
                 <div class="img scd"><img src="./Images/11.png" alt=""></div>
                 <div class="content">
-                    <div class="name">Пир. с колб.</div>
-                    <div class="price">60₽</div>
+                    <div class="name">Фрукты в шок.</div>
+                    <div class="price">180₽</div>
                 </div>
                 <div class="button">В корзину</div>
             </div>
@@ -247,8 +301,8 @@
             <div class="item">
                 <div class="img trd"><img src="./Images/12.png" alt=""></div>
                 <div class="content">
-                    <div class="name">Пикник</div>
-                    <div class="price">100₽</div>
+                    <div class="name">Фрукты в карам.</div>
+                    <div class="price">160₽</div>
                 </div>
                 <div class="button">В корзину</div>
             </div>
@@ -258,27 +312,27 @@
         <div class="items last">
 
             <div class="item">
-                <div class="img fst"><img src="./Images/nope1.png" alt=""></div>
+                <div class="img fst"><img src="./Images/13.png" alt=""></div>
                 <div class="content">
-                    <div class="name">Пирожки со свин.</div>
-                    <div class="price">80₽</div>
+                    <div class="name">Шоколад. Пудинг</div>
+                    <div class="price">60₽</div>
                 </div>
                 <div class="nope">Нет в наличии</div>
             </div>
 
             <div class="item">
-                <div class="img scd"><img src="./Images/nope2.png" alt=""></div>
+                <div class="img scd"><img src="./Images/14.png" alt=""></div>
                 <div class="content">
-                    <div class="name">С овощаим</div>
-                    <div class="price">60₽</div>
+                    <div class="name">Баурсак</div>
+                    <div class="price">50₽</div>
                 </div>
                 <div class="nope">Нет в наличии</div>
             </div>
             
             <div class="item">
-                <div class="img trd"><img src="./Images/nope3.png" alt=""></div>
+                <div class="img trd"><img src="./Images/15.png" alt=""></div>
                 <div class="content">
-                    <div class="name">Пир. с грибами</div>
+                    <div class="name">Фондан</div>
                     <div class="price">100₽</div>
                 </div>
                 <div class="nope">Нет в наличии</div>
