@@ -41,9 +41,13 @@ body {
 }
 
 .img {
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.img img {
     height: 310px;
-    background-color: red;  
-    margin-bottom: 15px;      
+    width: auto;
 }
 
 

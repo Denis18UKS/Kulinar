@@ -46,6 +46,20 @@ body {
     margin-bottom: 15px;      
 }
 
+.img.fst,
+.img.fst img {
+    max-width: 520px;
+}
+
+.img.scd,
+.img.scd img {
+    max-width: 414px;
+}
+
+.img.trd,
+.img.trd img {
+    max-width: 484px;
+}
 
 .content {
     display: flex;
