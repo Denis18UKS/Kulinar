@@ -37,7 +37,7 @@
                     <div class="nav__link"><a href="../Info/index.html">Информация</a></div>
                 </div>
                 <div class="nav__btns">
-                    <div class="cart"><img onclick="location.href = '../Shop-cart/index.html'" src="../Images/cart.png" alt=""></div>
+                    <div class="cart" id="cart-ID" onclick="error()"><img src="../Images/cart.png" alt=""></div>
                     <button id="reg__button">Регистрация</button>
                 </div>
             </nav>
@@ -66,7 +66,7 @@
 <div class="reg__overlay">
     <div class="reg">
         <div class="reg__text">РЕГИСТРАЦИЯ</div>
-        <form id="form" action="http://groupprojectkarpovandxamitov/Kulinar/Verstka/reg.php" method="post">
+        <form id="form" action="" method="post">
             <div class="form">
                 <label for="name"></label>
                 <input name="name" id="name" type="text" placeholder="Имя:" required>
@@ -118,13 +118,13 @@
         <div class="reg__text">вход</div>
         <form id="form" class="mini" method="get">
             <div class="form">
-                <label for="login"></label>
+                <label for="login"></label> 
                 <input name="login" id="login" type="login" placeholder="Логин:" required>
             </div>
 
             <div class="form">
                 <label for="passwordd"></label>
-                <input name="passwordd" id="passwordd" type="passwordd" placeholder="Пароль:" required>
+                <input name="passwordd" id="passwordd" type="password" placeholder="Пароль:" required>
             </div>
 
             <div class="buttons">
