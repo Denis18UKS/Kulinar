@@ -113,3 +113,10 @@ body {
     font-size: 40px;
     text-align: center;
 }
+
+.button:hover,
+.main__btn:hover {
+    box-shadow: inset 0px 0px 6px 6px rgb(238, 206, 146),
+                inset 0px 0px 3px 1px rgb(240, 240, 240);
+    transition: all 0.6s ease-in-out;
+}

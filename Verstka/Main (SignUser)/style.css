@@ -148,7 +148,7 @@ body {
 }
 
 .more {
-    margin-top: 50px;
+    margin: 50px auto 0;
     width: 100%;
     color: #000;
     font-family: 'Inter', sans-serif;
@@ -160,6 +160,9 @@ body {
     justify-content: center;
     position: relative;
     cursor: pointer;
+    background-color: inherit;
+    width: auto;
+    border: 0;
 }
 
 .more:after {

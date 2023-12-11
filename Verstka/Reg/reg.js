@@ -20,6 +20,7 @@ document.querySelector('.back__mini').addEventListener('click', function(event) 
 document.getElementById('registr').addEventListener('click', function() {
     document.location.href = '../Main (SignUser)/index.html';
 });
+
 document.getElementById('reg__mini').addEventListener('click', function(event) {
     event.preventDefault();
     let select = document.getElementById('select').value;
@@ -35,3 +36,4 @@ document.getElementById('reg__mini').addEventListener('click', function(event) {
         break;
     }    
 });
+

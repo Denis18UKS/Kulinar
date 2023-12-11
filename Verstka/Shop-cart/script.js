@@ -1,11 +1,8 @@
-
 let amount = Array.from(document.getElementsByClassName('number'));
 let onePrice = document.getElementsByClassName('oneprice');
 let morePrice = document.getElementsByClassName('moreprice');
-
-let parent = document.getElementById('items');
-let child = document.getElementsByClassName('item');
 let sum = 0;
+let delKey;
 
 amount.forEach((el, key) => {
     console.log(morePrice[key].textContent);
@@ -20,8 +17,9 @@ amount.forEach((el, key) => {
         amount[key].textContent = +(amount[key].textContent) - 1;
         morePrice[key].textContent = +(amount[key].textContent) * +(onePrice[key].textContent);
 
-        if(+(amount[key].textContent) <= 0) {
-            parent.removeChild(child[key]);
+        if (amount[key].textContent == 0) {
+            delKey = +key;
+            delChild();
         }
     });
 
@@ -36,3 +34,10 @@ amount.forEach((el, key) => {
         document.getElementById('sum').textContent = sum + '₽';
     });
 });
+
+function delChild() {
+    let items = document.getElementById('items');
+    let item = document.querySelectorAll('.item');
+    items.removeChild(item[delKey]);
+    amount = Array.from(document.getElementsByClassName('number'));     
+}
