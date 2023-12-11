@@ -41,3 +41,86 @@ function delChild() {
     items.removeChild(item[delKey]);
     amount = Array.from(document.getElementsByClassName('number'));     
 }
+
+//Код выше отвечает за калькуляцию итоговой суммы заказа
+
+
+//Удаление блюда из корзины
+function delall(){
+
+    var c1 = document.getElementById("item1")
+    var c2 = document.getElementById("item2")
+    var c3 = document.getElementById("item3")
+    var c4 = document.getElementById("item4")
+    var c5 = document.getElementById("item5")
+    var c6 = document.getElementById("item6")
+    // var summ = document.getElementsByClassName("sum")
+    // var summ1 = document.getElementsById("sum")
+    
+    
+    c1.style.display = "none"
+    c2.style.display = "none"
+    c3.style.display = "none"
+    c4.style.display = "none"
+    c5.style.display = "none"
+    c6.style.display = "none"
+    // summ.style.display = "none"
+    // summ1.style.display = "none"
+
+}
+
+function checkshop(){
+    var c1 = document.getElementById("item1")
+    var c2 = document.getElementById("item2")
+    var c3 = document.getElementById("item3")
+    var c4 = document.getElementById("item4")
+    var c5 = document.getElementById("item5")
+    var c6 = document.getElementById("item6")
+
+    var id = Math.random()
+
+    if(c1.style.display === "none"
+    && c2.style.display === "none"
+    && c3.style.display === "none"
+    && c4.style.display === "none"
+    && c5.style.display === "none"
+    && c6.style.display === "none")
+
+
+
+    {
+        alert("Корзина Пуста!")
+    } else {
+        alert(`Заказ Оформлен! Номер заказка ${id}`)
+    }
+}
+
+function del1(){
+    var c1 = document.getElementById("item1")
+    c1.style.display = "none"
+}
+
+function del2(){
+    var c2 = document.getElementById("item2")
+    c2.style.display = "none"
+}
+
+function del3(){
+    var c3 = document.getElementById("item3")
+    c3.style.display = "none"
+}
+
+function del4(){
+    var c4 = document.getElementById("item4")
+    c4.style.display = "none"
+}
+
+function del5(){
+    var c5 = document.getElementById("item5")
+    c5.style.display = "none"
+}
+
+function del6(){
+    var c6 = document.getElementById("item6")
+    c6.style.display = "none"
+}

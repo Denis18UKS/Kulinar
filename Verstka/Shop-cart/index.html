@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="../Reg/reg.css">
     <link rel="stylesheet" href="../Nav/nav.css">
     <link rel="stylesheet" href="../Footer/footer.css">
+    <link rel="stylesheet" href="../buttonhover.css">
     <meta charset="UTF-8">
     <meta name="viewport" initial-scale=1.0">
     <title>Shop-cart</title>
@@ -56,10 +57,10 @@
                     </div>
                     <div class="nav__links">
                         <div class="nav__link active"><a href="../Main/index.html">Главная</a></div>
-                        <div class="nav__link"><a href="../reviews_sign/index.html">Отзывы</a></div>
+                        <div class="nav__link"><a href="../Reviews/index.html">Отзывы</a></div>
                         <div class="nav__link"><a href="../Info/index.html">Информация</a></div>
-                        <div class="nav__link"><a href="../OrderHistory/index.html">Заказы</a></div>
-                        <div class="nav__link"><a href="../OrderHistory/index.html">Статус</a></div>
+                        <div class="nav__link"><a href="../Info/index.html">Заказы</a></div>
+                        <div class="nav__link"><a href="../Info/index.html">Статус</a></div>
                     </div>
                     <div class="nav__btns">
                         <img src="../Main (SignUser)/icons/Group 106.png">
@@ -77,11 +78,11 @@
         <h1 class="title">Корзина</h1>
 
         <div id="items">
-            <div class="item">
+            <div class="item" id="item1">
                 <div class="item__block">
                     <div class="image"><img src="Images/1.png" alt=""></div>
                     <div class="name">Пирожки с картошкой</div>
-                    <button class="cart__delete">Убрать из корзины</button>
+                    <button class="cart__delete" onclick="del1()">Убрать из корзины</button>
                 </div>
                 <div class="item__content">
                     <div class="amount">Количество: <span class="number">3</span>шт
@@ -93,11 +94,11 @@
                 </div>
             </div>
 
-            <div class="item">
+            <div class="item" id="item2">
                 <div class="item__block">
                     <div class="image"><img src="Images/2.png" alt=""></div>
                     <div class="name">Брауни</div>
-                    <button class="cart__delete">Убрать из корзины</button>
+                    <button class="cart__delete" onclick="del2()">Убрать из корзины</button>
                 </div>
                 <div class="item__content">
                     <div class="amount">Количество: <span class="number">1</span>шт
@@ -109,11 +110,11 @@
                 </div>
             </div>
 
-            <div class="item">
+            <div class="item" id="item3">
                 <div class="item__block">
                     <div class="image"><img src="Images/3.png" alt=""></div>
                     <div class="name">Десерт в стакане</div>
-                    <button class="cart__delete">Убрать из корзины</button>
+                    <button class="cart__delete" onclick="del3()">Убрать из корзины</button>
                 </div>
                 <div class="item__content">
                     <div class="amount">Количество: <span class="number">1</span>ст
@@ -125,11 +126,11 @@
                 </div>
             </div>
 
-            <div class="item">
+            <div class="item" id="item4">
                 <div class="item__block">
                     <div class="image"><img src="Images/4.png" alt=""></div>
                     <div class="name">Сок</div>
-                    <button class="cart__delete">Убрать из корзины</button>
+                    <button class="cart__delete" onclick="del4()">Убрать из корзины</button>
                 </div>
                 <div class="item__content">
                     <div class="amount">Количество: <span class="number">2</span>л
@@ -141,11 +142,11 @@
                 </div>
             </div>
 
-            <div class="item">
+            <div class="item" id="item5">
                 <div class="item__block">
                     <div class="image"><img src="Images/5.png" alt=""></div>
                     <div class="name">Банановый пирог</div>
-                    <button class="cart__delete">Убрать из корзины</button>
+                    <button class="cart__delete" onclick="del5()">Убрать из корзины</button>
                 </div>
                 <div class="item__content">
                     <div class="amount">Количество: <span class="number">1</span>шт
@@ -157,11 +158,11 @@
                 </div>
             </div>
 
-            <div class="item">
+            <div class="item" id="item6">
                 <div class="item__block">
                     <div class="image"><img src="Images/6.png" alt=""></div>
                     <div class="name">Пончики</div>
-                    <button class="cart__delete">Убрать из корзины</button>
+                    <button class="cart__delete" onclick="del6()">Убрать из корзины</button>
                 </div>
                 <div class="item__content">
                     <div class="amount">Количество: <span class="number">1</span>шт
@@ -176,8 +177,8 @@
 
         <div class="sum">Итого: <span id="sum">1680</span></div>
         <div class="cart-buttons">
-            <button id="clear">Очистить корзину</button>
-            <button id="buy">Оформить заказ</button>
+            <button id="clear" onclick="delall()">Очистить корзину</button>
+            <button id="buy" onclick="checkshop()">Оформить заказ</button>
         </div>
     </div>
 </div>

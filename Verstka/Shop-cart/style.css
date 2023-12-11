@@ -181,3 +181,9 @@ body {
     margin-left: 32px;
     transition: all 0.6s ease-in-out
 }
+
+.footer {
+    position: static;
+    bottom: 0;
+    width: 100%;
+}
