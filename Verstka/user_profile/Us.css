@@ -165,4 +165,5 @@ main{
 #Content-profile form button:hover{
     cursor: pointer;
     background-color: aliceblue;
+    color: #FFA500
 }   
