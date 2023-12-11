@@ -11,3 +11,103 @@
 .logo__text {
     font-family: 'Kavoon', serif;
 }
+
+.section {
+    margin: 200px 0;
+}
+
+.title {
+    color: #000;
+    text-align: center;
+    font-family: Tillana;
+    font-size: 96px;
+    font-weight: 700;
+    margin-bottom: 80px;
+}
+
+.table {
+    width: auto;
+    height: auto;
+    border-radius: 45px;
+    background: #FFBB68;
+    box-shadow: 0px 4px 11px 12px rgba(0, 0, 0, 0.43);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 2fr;
+    grid-template-rows: 150px repeat(130px);
+}
+
+.ord__num.main,
+.ord__detalis.main,
+.ord__address.main,
+.ord__status.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Inter;
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 900;
+    height: 150px;
+    border-top: 0;
+}
+
+.ord__num,
+.ord__detalis,
+.ord__address,
+.ord__status {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid #000;
+    padding: 10px;
+}
+
+.ord__num.last,
+.ord__detalis.last,
+.ord__address.last,
+.ord__status.last {
+    border-bottom: 0;
+}
+
+.ord__name {
+    color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 700;
+    width: 100%;
+}
+
+.ord__detalis {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.ord__num {
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 40px;
+    font-weight: 500;
+    border-left: 0;
+}
+
+.ord__address {
+    color: #000;
+    font-family: Inter;
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+    padding: 10px 40px;
+}
+
+.ord__status {
+    color: #000;
+    font-family: Inter;
+    font-size: 40px;
+    font-weight: 500;
+    border-right: 0;
+}
