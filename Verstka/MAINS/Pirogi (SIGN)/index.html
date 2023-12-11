@@ -1,0 +1,308 @@
+reg__miniDOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../Nav/nav.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../Footer/footer.css">
+    <link rel="stylesheet" href="../Reg/reg.css">
+    <link rel="stylesheet" href="buttonhover.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CookingHome</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Kavoon&family=Tillana:wght@400;700&display=swap" rel="stylesheet">
+
+    <script src="../Reg/reg.js" defer></script>
+    <script src="../script.js" defer></script>
+</head>
+<body>
+
+
+<header class="header">
+    <div class="nav">
+        <div class="container">
+            <nav class="nav__items"> 
+                <div class="logo">
+                    <div class="logo__icon"><img src="../Images/logo.png" alt=""></div>
+                    <div class="logo__text">CookingHome</div>
+                </div>
+                <div class="nav__links">
+                    <div class="nav__link"><a href="../Main/index.html">Главная</a></div>
+                    <div class="nav__link"><a href="../Reviews/index.html">Отзывы</a></div>
+                    <div class="nav__link"><a href="../Info/index.html">Информация</a></div>
+                </div>
+                <div class="nav__btns">
+                    <div class="cart"><img src="../Images/cart.png" alt=""></div>
+                    <button id="reg__button">Регистрация</button>
+                </div>
+            </nav>
+        </div>
+    </div>
+    </div>
+</header>
+
+<!-- Reg -->
+<div class="reg__overlay">
+    <div class="reg">
+        <div class="reg__text">РЕГИСТРАЦИЯ</div>
+        <form id="form" action="http://groupprojectkarpovandxamitov/Kulinar/Verstka/reg.php" method="post">
+            <div class="form">
+                <label for="name"></label>
+                <input name="name" id="name" type="text" placeholder="Имя:" required>
+            </div>
+
+            <div class="form">
+                <label for="surname"></label>
+                <input name="surname" id="surname" type="text" placeholder="Фамилия:" required>
+            </div>
+
+            <div class="form">
+                <label for="email"></label>
+                <input name="email" id="email" type="email" placeholder="Почта:" required>
+            </div>
+
+            <div class="form">
+                <label for="tel"></label>
+                <input name="tel" id="tel" type="tel" placeholder="Телефон:" required>
+            </div>
+
+            <div class="form">
+                <label for="address"></label>
+                <input name="address" id="address" type="text" placeholder="Адрес:" required>
+            </div>
+
+            <div class="form">
+                <label for="password"></label>
+                <input name="password" id="password" type="password" placeholder="Пароль:" required>
+            </div>
+
+            <div class="buttons">
+                <button class="back">Закрыть</button>
+                <div class="reg_btns">
+                    <label for="registr"></label>
+                    <input name="registr" id="registr" type="submit" value="Регистрация">
+                </div>
+            </div>
+            <div class="text">Уже есть аккаунт?</div>
+            <a id="link">Войти</a>
+        </form>
+    </div>
+</div>
+
+<!-- /Reg -->
+
+<!-- Mini Reg -->
+<div class="reg__overlay-mini">
+    <div class="reg mini">
+        <div class="reg__text">вход</div>
+        <form id="form" class="mini" action="../Main (SignUser)\index.html" method="get">
+            <div class="form">
+                <label for="login"></label>
+                <input name="login" id="login" type="login" placeholder="Логин:" required>
+            </div>
+
+            <div class="form">
+                <label for="passwordd"></label>
+                <input name="passwordd" id="passwordd" type="passwordd" placeholder="Пароль:" required>
+            </div>
+
+            <div class="buttons">
+                <button class="back__mini">Закрыть</button>
+                <div class="reg_bnts">
+                    <label for="reg__mini"></label>
+                    <input name="reg__mini" id="reg__mini" type="submit" value="Вход">
+                </div>
+            </div>
+
+            <div class="select">
+                <label for="select"></label>
+                <select name="select" id="select">
+                    <option value="User">Пользователь</option>
+                    <option value="Kulinar">Кулинар</option>
+                    <option value="Delivery">Курьер</option>
+                </select>
+            </div>
+        </form>
+    </div>
+</div>
+<!-- /Mini Reg -->
+
+
+<section class="section">
+    <div class="container">
+        <h1 class="title">Пироги</h1>
+
+        <div class="items">
+            <div class="item">
+                <div class="img fst"><img src="./Images/1.png" alt=""></div>
+                <div class="content">
+                    <div class="name">Пирог с рисом</div>
+                    <div class="price">580₽</div>
+                </div>
+                <div class="button">В корзину</div>
+            </div>
+
+            <div class="item">
+                <div class="img scd"><img src="./Images/2.png" alt=""></div>
+                <div class="content">
+                    <div class="name">Вишневый</div>
+                    <div class="price">360₽</div>
+                </div>
+                <div class="button">В корзину</div>
+            </div>
+            
+            <div class="item">
+                <div class="img trd"><img src="./Images/3.png" alt=""></div>
+                <div class="content">
+                    <div class="name">Малиновый</div>
+                    <div class="price">420  ₽</div>
+                </div>
+                <div class="button">В корзину</div>
+            </div>
+        </div>
+
+
+        <div class="items">
+            <div class="item">
+                <div class="img fst"><img src="./Images/4.png" alt=""></div>
+                <div class="content">
+                    <div class="name">Яблочный</div>
+                    <div class="price">580₽</div>
+                </div>
+                <div class="button">В корзину</div>
+            </div>
+
+            <div class="item">
+                <div class="img scd"><img src="./Images/5.png" alt=""></div>
+                <div class="content">
+                    <div class="name">Мясной</div>
+                    <div class="price">360₽</div>
+                </div>
+                <div class="button">В корзину</div>
+            </div>
+            
+            <div class="item">
+                <div class="img trd"><img src="./Images/6.png" alt=""></div>
+                <div class="content">
+                    <div class="name">Пирог с капустой</div>
+                    <div class="price">420₽</div>
+                </div>
+                <div class="button">В корзину</div>
+            </div>
+        </div>
+
+
+        <div class="items">
+            <div class="item">
+                <div class="img fst"><img src="./Images/7.png" alt=""></div>
+                <div class="content">
+                    <div class="name">Манговый</div>
+                    <div class="price">580₽</div>
+                </div>
+                <div class="button">В корзину</div>
+            </div>
+
+            <div class="item">
+                <div class="img scd"><img src="./Images/8.png" alt=""></div>
+                <div class="content">
+                    <div class="name">Тыквенный</div>
+                    <div class="price">360₽</div>
+                </div>
+                <div class="button">В корзину</div>
+            </div>
+            
+            <div class="item">
+                <div class="img trd"><img src="./Images/9.png" alt=""></div>
+                <div class="content">
+                    <div class="name">Ананасовый</div>
+                    <div class="price">420₽</div>
+                </div>
+                <div class="button">В корзину</div>
+            </div>
+            
+        </div>
+
+        <div class="items">
+
+            <div class="item">
+                <div class="img fst"><img src="./Images/10.png" alt=""></div>
+                <div class="content">
+                    <div class="name">Абрикосовый</div>
+                    <div class="price">580₽</div>
+                </div>
+                <div class="button">В корзину</div>
+            </div>
+
+            <div class="item">
+                <div class="img scd"><img src="./Images/11.png" alt=""></div>
+                <div class="content">
+                    <div class="name">Банановый</div>
+                    <div class="price">360₽</div>
+                </div>
+                <div class="button">В корзину</div>
+            </div>
+            
+            <div class="item">
+                <div class="img trd"><img src="./Images/12.png" alt=""></div>
+                <div class="content">
+                    <div class="name">Мандариновый</div>
+                    <div class="price">420₽</div>
+                </div>
+                <div class="button">В корзину</div>
+            </div>
+            
+        </div>
+
+        <div class="items last">
+
+            <div class="item">
+                <div class="img fst"><img src="./Images/13.png" alt=""></div>
+                <div class="content">
+                    <div class="name">Апельсиновый</div>
+                    <div class="price">580₽</div>
+                </div>
+                <div class="nope">Нет в наличии</div>
+            </div>
+
+            <div class="item">
+                <div class="img scd"><img src="./Images/14.png" alt=""></div>
+                <div class="content">
+                    <div class="name">С маракуей</div>
+                    <div class="price">360₽</div>
+                </div>
+                <div class="nope">Нет в наличии</div>
+            </div>
+            
+            <div class="item">
+                <div class="img trd"><img src="./Images/13.png" alt=""></div>
+                <div class="content">
+                    <div class="name">Картофельный</div>
+                    <div class="price">420₽</div>
+                </div>
+                <div class="nope">Нет в наличии</div>
+            </div>
+            
+        </div>
+
+        <div class="main__btn" onclick="location.href = '../Main/index.html'">На главную</div>
+
+    </div>
+
+</section>
+
+
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__items">
+            <div class="tel"><a href="#" target="blank">+7(953) 482-15-25</a></div>
+            <div class="gmail"><a href="#" target="blank">CookingHome@gmail.com</a></div>
+            <div class="support"><a href="#" target="blank">Тех.поддержка</a></div>
+        </div>
+    </div>
+</footer>
