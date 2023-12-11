@@ -32,7 +32,7 @@ document.getElementById('reg__mini').addEventListener('click', function(event) {
             document.location.href = '../Main (Kulinar)/index.html';            
         break;
         case 'Delivery':
-            document.location.href = '../Main (Delivery)/index.html';            
+            document.location.href = '../OrderHistory (Delivers)/index.html';            
         break;
     }    
 });

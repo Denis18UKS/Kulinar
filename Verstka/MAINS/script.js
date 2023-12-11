@@ -15,3 +15,7 @@ document.querySelectorAll('.button').forEach((el) => {
 //добавить блюдо в корзину
 
 //Иначе - товар будет "добавлен" в корзину
+
+function error(){
+    alert('Вы не зарегестрированы!');
+}
